@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans TC', sans-serif;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(/all_bg.png);
+    background-color: #6DD0CD;
+}
+
+/* logo */
+.nav_left {
+    position: sticky;
+    top: 32px;
+    height: 0px;
+    z-index: 999;
+    margin-left: 50px;
+}
+
+.nav_left img {
+    width: 120px;
+}
+
+/* 主標 */
+.course_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.course_title h1 {
+    font-size: 3.5rem;
+    color: #005F5F;
+    display: flex;
+    justify-content: center;
+    margin-right: 48px;
+}
+.container1{
+   
+}
+.head {
+    width: 150px;
+    height: 150px;
+    background: #EEEEEE;
+    
+}
+.headnew{
+    color: #005F5F;
+    padding: 12px;
+    
+}
+
+.navmember {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    width: 188px;
+    height: 384px;
+    background: #FFF6E9;
+    border: 2px solid #333333;
+    box-shadow: 4px 4px 0px #333333;
+    border-radius: 20px;
+   
+}
+
+.navmember1 ul {
+   
+}
+
+.m1 {
+    width: 80px;
+    height: 32px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 160%;
+    text-align: center;
+    list-style: none;
+    margin-bottom: 32px; 
+    margin-top: 32px;
+}
+.m2 {
+    width: 80px;
+    height: 32px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 160%;
+    text-align: center;
+    list-style: none; 
+}
+.m3 {
+    width: 80px;
+    height: 32px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 160%;
+    text-align: center;
+    list-style: none; 
+    margin-top: 32px;
+}
+.navmember1 li{
+   margin-bottom: 64px;
+   
+}
