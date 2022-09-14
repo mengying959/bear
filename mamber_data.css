@@ -53,8 +53,8 @@ body {
     justify-content: center;
     margin-right: 48px; */
     padding-bottom: 48px;
+    font-size: 2rem;
     font-weight: 700;
-    line-height: 36px;
 
 }
 
@@ -78,15 +78,18 @@ body {
     padding: 12px;
     margin-top: 12px;
     display: block;
-    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+   
 }
 
 .share {
     margin-top: 48px;
     color: #005F5F;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 160%;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.6rem;
 }
 
 /* 會員資料bar */
@@ -114,9 +117,9 @@ body {
 .navmember_item {
     width: 100%;
     height: 96px;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 160%;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.6rem;
     text-align: center;
     list-style: none;
 }
@@ -176,11 +179,13 @@ body {
     padding: 24px;
     font-size: 24px;
     font-weight: 700;
+    margin: 0;
 }
 
 .member_box1 h3 {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.6rem;
 }
 
 .member_box123 {

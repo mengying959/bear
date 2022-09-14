@@ -39,7 +39,8 @@ body {
 }
 
 .course_title h1 {
-    font-size: 3.5rem;
+    font-size: 2rem;
+    font-weight: 700;
     color: #005F5F;
     display: flex;
     justify-content: center;
@@ -56,7 +57,9 @@ body {
 /* 選單列表 */
 .formItem {
     color: #005F5F;
-    font-size: 24px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.6rem;
     margin-bottom: 8px;
     display: flex;
     justify-content: center;
@@ -171,9 +174,9 @@ body {
     color: #FFF6E9;
     font-family: 'Inter';
     font-style: normal;
+    font-size: 0.875rem;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 160%;
+    line-height: 1.6rem;
     text-decoration: none;
     letter-spacing: 0.1em;
     transition-duration: .3s;

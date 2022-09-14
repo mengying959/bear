@@ -49,8 +49,8 @@ body {
 .map_collect_title h1{
     color: #005F5F;
     padding: 12px 30px ;
-    font-size: 32px;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 700;
     margin: 0;
 }
 .map_collect_title.c1{
@@ -80,15 +80,17 @@ body {
     padding: 12px;
     margin-top: 12px;
     display: block;
-    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.6rem;
 }
 
 .share {
     margin-top: 48px;
     color: #005F5F;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 160%;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.6rem;
 }
 
 /* 會員資料bar */
@@ -117,8 +119,9 @@ body {
     width: 100%;
     height: 96px;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 160%;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.6rem;
     text-align: center;
     list-style: none;
 }
@@ -159,7 +162,7 @@ body {
     padding: 24px;
    width: 100%;
    max-width: 853px;
-    height: 325px;
+    height: 321px;
     display: flex;
     margin: 0 auto 48px;
 
@@ -169,8 +172,9 @@ body {
     
 }
 .mapcardp1 h2{
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.6rem;
 }
 
 .mapcardp {
@@ -180,11 +184,14 @@ body {
 
 }
 .mapcardp h4{
-    font-size:16px ;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    margin-bottom: 0;
 }
 
 .mapcardp1 {
-    margin-top: 16px;
+    /* margin-top: 16px; */
     justify-content: space-between;
 }
 
@@ -235,9 +242,9 @@ body {
     color: #FFF6E9;
     font-family: 'Inter';
     font-style: normal;
+    font-size: 0.875rem;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 160%;
+    line-height: 1.6rem;
     text-decoration: none;
     letter-spacing: 0.1em;
     transition-duration: .3s;
