@@ -27,41 +27,8 @@ body {
     width: 120px;
 }
 
-.course_wrap {
-    display: flex;
-}
-
-.nav_right {
-    display: inline-block;
-    position: absolute;
-    right: 95px;
-    top: 32px;
-    /* margin: 48px 95px; */
-    background-color: #005F5F;
-    border-radius: 200px;
-    border: 2px solid #FFF6E9;
-    width: 150px;
-    height: 400px;
-    z-index: 999;
-}
-
-.nav_right li {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 24px;
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: #FFF6E9;
-    border-bottom: 2px dashed #FFF6E9;
-}
-.nav_right li+li{
-    border-top: 1px dashed #333333;
-}
-
 .member_wrap {
-    padding: 108px;
+    padding: 108 0 0 px;
 }
 
 /* 主標 */
@@ -72,8 +39,11 @@ body {
 }
 
 .course_title {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+    margin-bottom: 48px; */
 }
 
 .course_title h1 {
@@ -180,6 +150,7 @@ body {
     border: 2px solid #333333;
     box-shadow: 4px 4px 0px #333333;
     border-radius: 20px;
+   
 }
 
 .member1_box {
@@ -216,7 +187,36 @@ body {
     letter-spacing: 38px;
 }
 
-footer {
+/* 性別 */
+.member_box1b {
+    display: flex;
+
+}
+
+.select_month {
+    text-align: center;
+}
+
+/* 男 */
+.member_box1b .boxradio1 {
+    margin-right: 24px;
+    width: 22px;
+
+}
+
+/* 女 */
+.member_box1b .boxradio2 {
+    margin: 0 24px 0 50px;
+    width: 22px;
+
+}
+
+.boxradio1 {
+
+
+}
+
+.footer {
     background-color: #005F5F;
     box-shadow: 0px -3px 0px #333333;
     padding: 11px 0px;
@@ -228,31 +228,42 @@ footer {
     width: 422px;
 }
 
+/* 生日 */
+.select_month {
+    box-sizing: border-box;
+    background-color: #FFF6E9;
+    width: 95px;
+    height: 36px;
+    border-radius: 8px;
+    border: 2px solid #333333;
+    color: #005F5F;
+}
+
 /* 修改會員資料按鈕 */
-.chang_member {
+.changgg {
     background: #005F5F;
     border-radius: 5px;
-    width: 162px;
-    height: 41px;
+    width: 146px;
+    height: 58px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 48px auto 0  ;
+   
 }
-
-.chang_member p {
+.changgg p{
+    color: #FFF6E9;
+    font-size: 20px;
+    font-weight: 500;
     margin: 0;
-    font-size: 16px;
-    font-weight: 600;
-    color: #FFF6E9;
+   
 }
-
-.fa-solid {
-    margin-right: 7px;
-
-    color: #FFF6E9;
+footer {
+    background-color: #005F5F;
+    box-shadow: 0px -3px 0px #333333;
+    padding: 11px 0px;
+    margin-top: 48px;
 }
-
-
 footer p {
     color: #FFF6E9;
     font-size: 1rem;

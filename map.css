@@ -21,6 +21,7 @@ body {
     height: 0px;
     z-index: 999;
     margin-left: 50px;
+    display: inline-block;
 }
 
 .nav_left img {
@@ -110,16 +111,22 @@ body {
     /* margin: auto; */
     /* margin-top: 48px; */
     margin: 0 auto 48px;
+    
+}
+.mapcardp1{
+    display: flex;
 }
 
 .mapcardp {
     color: #333333;
     width: 100%;
-    padding-right: 16px;
+    padding: 0 48px;
+
 }
 
 .mapcardp1 {
     margin-top: 23.25px;
+    justify-content: space-between;
 }
 
 .mapcardp2 {
@@ -143,7 +150,7 @@ body {
 }
 
 .mapcardp5 p {
-    border-style: solid;
+    border: 2px solid #005F5F;
     padding: 2px;
     margin-right: 12px;
     border-radius: 5px;
@@ -179,11 +186,7 @@ body {
 }
 /* 收藏icon */
 .mapcardp1 i{
- position: absolute;
- left: 83.8%;
- top: 73%;
- font-size: 2rem;
-
+ font-size: 2em;
 }
 /* 頁面選單 */
 .bigpageitem {
@@ -214,6 +217,7 @@ body {
     color: #FFF6E9;
     transition: .3s;
     text-decoration: none;
+    height: 100%;
 }
 
 .page-link:hover {
@@ -252,4 +256,3 @@ footer p {
       }
           
 }
-
