@@ -29,6 +29,8 @@ body {
 }
 
 /* logo */
+.member_wrap .row{ 
+    margin: 0; }
 .member_wrap {
     min-height: calc(100% - 50px);
     padding-top: 128px;
@@ -411,7 +413,22 @@ footer p {
     .member_info{
         padding-bottom: 48px;
     }
-    .member_box1 h3{
-
+    .member_box12{
+        text-align: left;
     }
+
+    .member_box12 tr{ 
+        display: flex;     
+        flex-direction: column; 
+    }
+    .member_box1 h2{ 
+        padding: 0;
+        /* padding-bottom: 16px; */
+    }
+    .member_box1 td{
+        padding-bottom: 16px;
+    }
+
+
+
 }

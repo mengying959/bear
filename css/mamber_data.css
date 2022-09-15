@@ -28,7 +28,73 @@ body {
 }
 
 .member_wrap {
-    padding: 108 0 0 px;
+    min-height: calc(100% - 50px);
+    padding-top: 128px;
+    padding-bottom: 48px;
+}
+
+.course_wrap {
+    display: flex;
+    /* position: absolute; */
+
+    position: sticky;
+    top: 32px;
+    width: 100%;
+    z-index: 999;
+}
+.nav_right {
+    position: absolute;
+    top: 48px;
+    /* z-index: 999; */
+    /* margin-right: 30px; */
+    width: 150px;
+    /* height: 10px; */
+    right: 50px;
+    border-radius: 100px;
+    border: 2px solid #FFF6E9;
+    background-color: #005F5F;
+    /* overflow: hidden; */
+    /* position: relative; */
+
+}
+
+.nav_right ul {
+    padding: 0px;
+    margin: 0px;
+    height: 400px;
+}
+
+.nav_right li {
+    list-style-type: none;
+    color: #FFF6E9;
+    text-align: center;
+    padding: 15px 0px;
+    transition: .5s;
+    border-bottom: 2px dashed #FFF6E9;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.nav_right .li_top {
+    padding-top: 35px;
+}
+
+.nav_right li:hover {
+    color: #005F5F;
+    background-color: #FFF6E9;
+}
+
+.nav_right a:hover {
+    text-decoration: none;
+}
+
+.nav_right .icon a {
+    color: #FFF6E9;
+    transition: .5s;
+}
+
+.nav_right .icon a:hover {
+    transform: scale(1.2);
 }
 
 /* 主標 */
@@ -267,7 +333,8 @@ footer {
     background-color: #005F5F;
     box-shadow: 0px -3px 0px #333333;
     padding: 11px 0px;
-    margin-top: 48px;
+    /* margin-top: 48px; */
+    height: 50px;
 }
 footer p {
     color: #FFF6E9;
