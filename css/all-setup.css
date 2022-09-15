@@ -1,0 +1,223 @@
+:root {
+    font-family: 'Noto Sans TC',sans-serif;    
+    box-sizing: border-box;
+    --mydarkgreen:#005F5F;
+    --mygreen:#6DD0CD;
+    --mylightgreen:#B1D7D5;
+    --myblack:#333333;
+    --mybeige:#FFF6E9;
+    --mylightbeige:#FFFCF7;
+    --myorange:#F2AD31;
+    --mygray:#808080;
+    --box-shadow: 4px 4px 0 var(--myblack)
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    margin-bottom: 0;
+}
+
+h5 {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+}
+
+
+/* btn 設定 */
+.darkbutton {
+    top: 0;
+    left: 0;
+    transition: all 0.15s linear 0s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--mydarkgreen);
+    border: 2px solid var(--myblack);
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: var(--mybeige);
+    letter-spacing: 1px;
+    box-shadow: 4px 4px 0 var(--myblack);
+    text-decoration: none;
+}
+
+.darkbutton::after {
+    transition: all 0.15s linear 0s;
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: -2px;
+    width: 8px;
+    height: 8px;
+    background-color: var(--myblack);
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.darkbutton::before {
+    transition: all 0.15s linear 0s;
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 2px;
+    width: 8px;
+    height: 8px;
+    background-color: var(--myblack);
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.darkbutton:hover {
+    top: 4px;
+    left: 4px;
+    color: var(--mybeige);
+    box-shadow: 2px 2px 0 var(--myblack);
+}
+
+.darkbutton:hover::after {
+    top: 1px;
+    right: -1px;
+    width: 8px;
+    height: 8px;
+}
+
+.darkbutton:hover::before {
+    bottom: -1px;
+    right: 1px;
+    width: 8px;
+    height: 8px;
+}
+
+a.darkbutton {
+    position: relative;
+}
+
+a:active.darkbutton {
+    top: 6px;
+    left: 6px;
+    box-shadow: none;
+}
+
+a:active.darkbutton:before {
+    bottom: 1px;
+    left: 1px;
+}
+
+a:active.darkbutton:after {
+    top: 1px;
+    right: 1px;
+}
+
+/* btn 設定 */
+.lightbutton {
+    top: 0;
+    left: 0;
+    transition: all 0.15s linear 0s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--mybeige);
+    border: 2px solid var(--myblack);
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: var(--mydarkgreen);
+    letter-spacing: 1px;
+    box-shadow: 4px 4px 0 var(--myblack);
+    text-decoration: none;
+}
+
+.lightbutton::after {
+    transition: all 0.15s linear 0s;
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: -2px;
+    width: 8px;
+    height: 8px;
+    background-color: var(--myblack);
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.lightbutton::before {
+    transition: all 0.15s linear 0s;
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 2px;
+    width: 8px;
+    height: 8px;
+    background-color: var(--myblack);
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.lightbutton:hover {
+    top: 4px;
+    left: 4px;
+    color: var(--mydarkgreen);
+    box-shadow: 2px 2px 0 var(--myblack);
+}
+
+.lightbutton:hover::after {
+    top: 1px;
+    right: -1px;
+    width: 8px;
+    height: 8px;
+}
+
+.lightbutton:hover::before {
+    bottom: -1px;
+    right: 1px;
+    width: 8px;
+    height: 8px;
+}
+
+a.lightbutton {
+    position: relative;
+}
+
+a:active.lightbutton {
+    top: 6px;
+    left: 6px;
+    box-shadow: none;
+}
+
+a:active.lightbutton:before {
+    bottom: 1px;
+    left: 1px;
+}
+
+a:active.lightbutton:after {
+    top: 1px;
+    right: 1px;
+}
