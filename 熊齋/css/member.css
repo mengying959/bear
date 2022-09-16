@@ -240,6 +240,7 @@ body {
     list-style: none;
 }
 
+
 .navmember_item+.navmember_item {
     border-top: 1px solid #333333;
 }
@@ -357,6 +358,7 @@ footer p {
 }
 
 @media only screen and (max-width:768px) {
+    
     .member_wrap {
         padding: 48px 0 10.82px;
         overflow: hidden;
@@ -389,6 +391,7 @@ footer p {
         padding: 12px 20px;
         height: 88px;
     }
+   
 
     .course_title h1 {
         margin: auto;

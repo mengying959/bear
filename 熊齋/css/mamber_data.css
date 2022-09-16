@@ -65,8 +65,8 @@ body {
 }
 .nav_right {
     position: absolute;
-    top: 48px;
-    /* z-index: 999; */
+    /* top: 48px; */
+    z-index: 999;
     /* margin-right: 30px; */
     width: 150px;
     /* height: 10px; */
@@ -98,6 +98,7 @@ body {
 
 .nav_right .li_top {
     padding-top: 35px;
+    border-radius: 200px 200px 0 0;
 }
 
 .nav_right li:hover {
@@ -234,6 +235,9 @@ body {
 }
 
 /* 會員資料卡 */
+.member_wrap{
+    padding-top: 0;
+}
 .member_box {
     background: #FFF6E9;
     overflow: hidden;
@@ -413,6 +417,7 @@ footer p {
     .course_title h1 {
         margin: auto;
         padding-top: 48px;
+        text-align: center;
     }
 
     .chang_member {
@@ -440,6 +445,13 @@ footer p {
 
     .chang_member1 {
         margin-top: 48px;
+    }
+    .course_title h1 {
+        margin: auto;
+        padding-top: 48px;
+    }
+    .changgg{
+       margin: 48px auto 48px;
     }
 
     /* .member_info{

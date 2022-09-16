@@ -420,6 +420,12 @@ footer p {
 }
 
 @media only screen and (max-width:768px) {
+
+    /* 去掉767橫向捲軸 */
+    .member_wrap .row {
+        margin: 0;
+    }
+
     .member_wrap {
         padding: 48px 0 10.82px;
         overflow: hidden;
@@ -561,5 +567,27 @@ footer p {
         position: absolute;
         right: 15px;
         bottom: 16px;
+    }
+    .map_collect1 h1{
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    margin-bottom: 0;
+
+    }
+    .map_collect1 {
+        
+    }
+    .map_collect_title{
+      /* width: 64px;
+      height: 26px; */
+    }
+    .member_info{
+        padding: 28px;
+    }
+    .bigpageitem{
+        padding-bottom:0 ;
     }
 }
