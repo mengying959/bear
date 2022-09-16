@@ -26,10 +26,11 @@ body {
 .nav_left img {
     width: 120px;
 }
+
 .nav_right {
     position: absolute;
     top: 48px;
-    /* z-index: 999; */
+    z-index: 999;
     /* margin-right: 30px; */
     width: 150px;
     /* height: 10px; */
@@ -61,7 +62,7 @@ body {
 
 .nav_right .li_top {
     padding-top: 35px;
-    border-radius: 200px 200px 0 0 ;
+    border-radius: 200px 200px 0 0;
 }
 
 .nav_right li:hover {
@@ -81,41 +82,49 @@ body {
 .nav_right .icon a:hover {
     transform: scale(1.2);
 }
+
 .member_wrap {
-    /* padding: 30px 20px; */
-    /* padding-left: 120px; */
+    min-height: calc(100% - 50px);
+    /* padding-top: 128px; */
+    padding-bottom: 50px;
 }
 
 /* 主標 */
 .member_info {
     padding: 0 48px;
 }
-.map_collect1{
+
+.map_collect1 {
     display: flex;
     padding-bottom: 48px;
 }
+
 .map_collect_title {
     background-color: #FFF6E9;
     border: 2px solid #333333;
     box-shadow: 4px 4px 0px #333333;
     border-radius: 10px;
-   /* margin-left: 19px; */
+    /* margin-left: 19px; */
 }
-.map_collect_title + .map_collect_title{
+
+.map_collect_title+.map_collect_title {
     margin-left: 19px;
 }
-.map_collect_title h1{
+
+.map_collect_title h1 {
     color: #005F5F;
-    padding: 12px 30px ;
+    padding: 12px 30px;
     font-size: 2rem;
     font-weight: 700;
     margin: 0;
 }
-.map_collect_title.c1{
+
+.map_collect_title.c1 {
     background-color: #005F5F;
-    
+
 }
-.map_collect_title.c1 h1{
+
+.map_collect_title.c1 h1 {
     color: #FFF6E9;
 }
 
@@ -123,6 +132,7 @@ body {
     max-width: 1140px;
     margin: 0 auto;
 }
+
 /* 大頭貼 */
 
 .head {
@@ -133,18 +143,9 @@ body {
     /* padding: 0 19px; */
 }
 
-.headnew {
-    color: #005F5F;
-    padding: 12px;
-    margin-top: 12px;
-    display: block;
-    font-size: 0.875rem;
-    font-weight: 500;
-    line-height: 1.6rem;
-}
-
 .share {
     margin-top: 48px;
+    margin-bottom: 48px;
     color: #005F5F;
     font-size: 0.875rem;
     font-weight: 500;
@@ -171,6 +172,7 @@ body {
 .navmember1 {
     width: 100%;
     margin: 0;
+
 }
 
 .navmember_item {
@@ -205,9 +207,15 @@ body {
     color: #333333;
 }
 
+.mapcardp1 h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.6rem;
+}
+
 .mappic img {
     border-radius: 20px;
-    
+
     width: 387px;
     height: 273px;
 }
@@ -218,18 +226,20 @@ body {
     background-color: #FFF6E9;
     box-shadow: #333333 3px 3px;
     padding: 24px;
-   width: 100%;
-   max-width: 853px;
+    width: 100%;
+    max-width: 853px;
     height: 321px;
     display: flex;
     margin: 0 auto 48px;
 
 }
-.mapcardp1{
+
+.mapcardp1 {
     display: flex;
-    
+
 }
-.mapcardp1 h2{
+
+.mapcardp1 h2 {
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.6rem;
@@ -241,7 +251,8 @@ body {
     padding-left: 48px;
 
 }
-.mapcardp h4{
+
+.mapcardp h4 {
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.6rem;
@@ -313,10 +324,12 @@ body {
     box-shadow: none;
     color: #333333;
 }
-.fa-regular{
+
+.fa-regular {
     font-size: 2em;
-   
+
 }
+
 /* 修改會員資料按鈕 */
 .chang_member {
     background: #005F5F;
@@ -327,18 +340,77 @@ body {
     justify-content: center;
     align-items: center;
 }
-.chang_member p{
+
+.chang_member p {
     margin: 0;
     font-size: 16px;
     font-weight: 600;
     color: #FFF6E9;
 }
-.fa-solid{
-   margin-right: 7px;
-    
+
+.fa-solid {
+    margin-right: 7px;
+
     color: #FFF6E9;
 }
 
+/* 頁面選單 */
+.bigpageitem {
+    text-align: center;
+    padding-bottom: 48px;
+    margin: auto;
+}
+
+.pagination {
+    display: inline-flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 0.25rem;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+
+.page-link {
+    background-color: #005F5F;
+    border: none;
+    color: #FFF6E9;
+    transition: .3s;
+    text-decoration: none;
+    height: 100%;
+}
+
+.page-link:hover {
+    background-color: #FFF6E9;
+}
+
+.page-item:first-child .page-link {
+    border-radius: 8px 0px 0px 8px;
+}
+
+.page-item:last-child .page-link {
+    border-radius: 0px 8px 8px 0px;
+}
+
+.pagination {
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: #005F5F;
+    box-shadow: 0px -3px 0px #333333;
+    padding: 11px 0px;
+    height: 50px;
+    position: relative;
+}
 
 footer p {
     color: #FFF6E9;
@@ -349,10 +421,145 @@ footer p {
 
 @media only screen and (max-width:768px) {
     .member_wrap {
-        padding: 0 25px;
+        padding: 48px 0 10.82px;
+        overflow: hidden;
+
     }
 
     .navmember {
         width: 100%;
+    }
+
+
+    .navmember {
+        width: 100%;
+
+    }
+
+    .navmember {
+        width: 324px;
+        height: 88px;
+        margin: 0 auto 48px;
+    }
+
+    .navmember_item {
+        padding: 12px 20px;
+        height: 88px;
+    }
+
+    .share {
+        margin-top: 32px;
+        margin-bottom: 48px;
+
+    }
+
+    .map_collect1 h1 {
+        padding: 6px 6px;
+        /* font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.6rem; */
+        margin-bottom: 0;
+    }
+
+    .mapcard {
+        /* width: calc(100% - 55px); */
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+
+    }
+
+    .mappic img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .mapcardp {
+        padding-left: 0;
+    }
+
+    .mapcardp1 {
+        margin-top: 23.5px;
+    }
+
+    .mapcardp3 {
+        margin-top: 23.5px;
+    }
+
+    .mapcardp4 {
+        margin-top: 23.5px;
+        margin-bottom: 0;
+
+    }
+
+    .mapcardp5 {}
+}
+
+@media screen and (max-width:576px) {
+    .formItem {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formItem label+label {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
+    .mappic img {
+        border-radius: 10px;
+    }
+
+    .mapcard {
+        padding: 16px 15px;
+        position: relative;
+    }
+
+    .mapcardp {
+        padding: 0;
+    }
+
+    .mapcardp2 {
+        margin-top: 16px;
+    }
+
+    .mapcardp1 {
+        margin-top: 32px;
+    }
+
+    .mapcardp3 {
+        padding-bottom: 16px;
+        margin-top: 16px;
+    }
+
+    .mapcardp4 {
+        margin-top: 0;
+    }
+
+    .mapcardp5 {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 16px;
+        padding: 0 2px;
+    }
+
+    .mapcardp5 a {
+        margin-top: 16px;
+    }
+
+    .maplink {
+        width: 244px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fa-regular {
+        width: 22px;
+        position: absolute;
+        right: 15px;
+        bottom: 16px;
     }
 }
