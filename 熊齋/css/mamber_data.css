@@ -1,0 +1,583 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans TC', sans-serif;
+    box-sizing: border-box;
+}
+:root {
+    font-family: 'Noto Sans TC', sans-serif;
+    box-sizing: border-box;
+    --mydarkgreen: #005F5F;
+    --mygreen: #6DD0CD;
+    --mylightgreen: #B1D7D5;
+    --myblack: #333333;
+    --mybeige: #FFF6E9;
+    --mylightbeige: #FFFCF7;
+    --myorange: #F2AD31;
+    --mygray: #808080;
+    --box-shadow: 4px 4px 0 var(--myblack)
+}
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: url(/all_bg.png) no-repeat center center / cover fixed;
+    background-color: #6DD0CD;
+}
+.member_wrap .row{ 
+    margin: 0; }
+.member_wrap {
+    min-height: calc(100% - 50px);
+    padding-top: 128px;
+    padding-bottom: 50px;
+}
+
+/* logo */
+.nav_left {
+    position: sticky;
+    top: 32px;
+    height: 0px;
+    z-index: 999;
+    margin-left: 50px;
+    margin-top: 48px;
+}
+
+.nav_left img {
+    width: 120px;
+}
+
+.member_wrap {
+    min-height: calc(100% - 50px);
+    padding-top: 128px;
+    padding-bottom: 48px;
+}
+
+.course_wrap {
+    display: flex;
+    /* position: absolute; */
+
+    position: sticky;
+    top: 32px;
+    width: 100%;
+    z-index: 999;
+}
+.nav_right {
+    position: absolute;
+    top: 48px;
+    /* z-index: 999; */
+    /* margin-right: 30px; */
+    width: 150px;
+    /* height: 10px; */
+    right: 50px;
+    border-radius: 100px;
+    border: 2px solid #FFF6E9;
+    background-color: #005F5F;
+    /* overflow: hidden; */
+    /* position: relative; */
+
+}
+
+.nav_right ul {
+    padding: 0px;
+    margin: 0px;
+    height: 400px;
+}
+
+.nav_right li {
+    list-style-type: none;
+    color: #FFF6E9;
+    text-align: center;
+    padding: 15px 0px;
+    transition: .5s;
+    border-bottom: 2px dashed #FFF6E9;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.nav_right .li_top {
+    padding-top: 35px;
+}
+
+.nav_right li:hover {
+    color: #005F5F;
+    background-color: #FFF6E9;
+}
+
+.nav_right a:hover {
+    text-decoration: none;
+}
+
+.nav_right .icon a {
+    color: #FFF6E9;
+    transition: .5s;
+}
+
+.nav_right .icon a:hover {
+    transform: scale(1.2);
+}
+
+/* 主標 */
+.member_info {
+    padding: 0 48px;
+
+    /* background-color: #ccc; */
+}
+
+.course_title {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+    margin-bottom: 48px; */
+}
+
+.course_title h1 {
+    font-size: 30px;
+    color: #005F5F;
+    /* display: flex;
+    margin-right: 48px; */
+    padding-bottom: 48px;
+    font-size: 2rem;
+    font-weight: 700;
+    /* justify-content: center; */
+    
+
+}
+
+.container1 {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* 大頭貼 */
+
+.head {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    background: #EEEEEE;
+    /* padding: 0 19px; */
+}
+
+.headnew {
+    color: #005F5F;
+    padding: 12px;
+    margin-top: 12px;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+   
+}
+
+.share {
+    margin-top: 48px;
+    color: #005F5F;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+}
+
+/* 會員資料bar */
+.navmember {
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    width: 188px;
+    /* height: 384px; */
+    background: #FFF6E9;
+    border: 2px solid #333333;
+    box-shadow: 4px 4px 0px #333333;
+    border-radius: 20px;
+    margin-top: 48px;
+}
+
+.navmember1 {
+    width: 100%;
+    margin: 0;
+}
+
+.navmember_item {
+    width: 100%;
+    height: 96px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    text-align: center;
+    list-style: none;
+}
+
+.navmember_item+.navmember_item {
+    border-top: 1px solid #333333;
+}
+
+.navmember_item.on {
+    background-color: #005F5F;
+}
+
+.navmember_item.on a {
+    color: #FFF6E9;
+}
+
+.navmember_item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #333333;
+}
+
+/* 會員資料卡 */
+.member_box {
+    background: #FFF6E9;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 2px solid #333333;
+    box-shadow: 4px 4px 0px #333333;
+    border-radius: 20px;
+   
+}
+
+.member1_box {
+    list-style: none;
+    display: flex;
+}
+
+.member_box12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.member_box1 h2 {
+    margin-right: 48px;
+}
+
+.member_box1 h2 {
+    padding: 24px;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.member_box1 h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+}
+
+.member_box123 {
+    letter-spacing: 38px;
+}
+
+/* 性別 */
+.member_box1b {
+    display: flex;
+
+}
+
+.select_month {
+    text-align: center;
+}
+
+/* 男 */
+.member_box1b .boxradio1 {
+    margin-right: 24px;
+    width: 22px;
+
+}
+
+/* 女 */
+.member_box1b .boxradio2 {
+    margin: 0 24px 0 50px;
+    width: 22px;
+
+}
+
+.boxradio1 {
+
+
+}
+
+.footer {
+    background-color: #005F5F;
+    box-shadow: 0px -3px 0px #333333;
+    padding: 11px 0px;
+    margin-top: 48px;
+    height: 50px;
+}
+
+.bottom_bd {
+    border-bottom: 1px solid #333333;
+    width: 422px;
+}
+.member_box1 input{
+    outline: none;
+    background: none;
+    border: 0px;
+}
+/* .member_box1 .placeholder{
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+} */
+
+/* 生日 */
+.select_month {
+    box-sizing: border-box;
+    background-color: #FFF6E9;
+    width: 95px;
+    height: 36px;
+    border-radius: 8px;
+    border: 2px solid #333333;
+    color: #005F5F;
+}
+
+/* 修改會員資料按鈕 */
+.changgg {
+    background: #005F5F;
+    border-radius: 5px;
+    width: 146px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 48px auto 0  ;
+   
+}
+.changgg p{
+    color: #FFF6E9;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+   
+}
+footer {
+    background-color: #005F5F;
+    box-shadow: 0px -3px 0px #333333;
+    padding: 11px 0px;
+    /* margin-top: 48px; */
+    height: 50px;
+}
+footer p {
+    color: #FFF6E9;
+    font-size: 1rem;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+@media only screen and (max-width:768px) {
+    .member_wrap {
+        padding: 48px 0 10.82px;
+        overflow: hidden;
+    }
+
+    .navmember {
+        width: 100%;
+    }
+
+    .headnew {
+        font-size: 14px;
+    }
+
+    .share {
+        font-size: 20px;
+        margin-top: 32px;
+    }
+
+    .share h3 {
+        margin-bottom: 48px;
+    }
+
+    .navmember {
+        width: 324px;
+        height: 88px;
+        margin: 0 auto;
+    }
+
+    .navmember_item {
+        padding: 12px 20px;
+        height: 88px;
+    }
+
+    .course_title h1 {
+        margin: auto;
+        padding-top: 48px;
+    }
+
+    .chang_member {
+        display: none;
+    }
+
+    .chang_member1 {
+        background: #005F5F;
+        border-radius: 5px;
+        width: 162px;
+        height: 41px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+
+    }
+
+    .chang_member1 p {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 600;
+        color: #FFF6E9;
+    }
+
+    .chang_member1 {
+        margin-top: 48px;
+    }
+
+    /* .member_info{
+        padding-bottom: 48px;
+        
+    }
+    .member_box12{
+        text-align: left;
+    }
+
+    .member_box12 tr{ 
+        display: flex;     
+        flex-direction: column; 
+    } 
+     .member_box1 h2{ 
+        padding: 0;
+    padding-bottom: 16px;
+     }
+    /* 姓名跟黃曉明間距 */
+    /* .member_box1 td:nth-child(1){         
+        padding-bottom: 16px;     
+    }      */
+    /* 黃曉明跟性別間距 */
+    /* .member_box1:not(:last-child) td:nth-child(2){         
+        padding-bottom: 56px;     }
+
+    .bottom_bd{
+        width: 100%;
+       
+    }
+    .member_box{
+   
+    } */
+
+}
+
+@media only screen and (max-width:576px){
+    .member_wrap {
+        padding: 27.5px 0 ;
+        overflow: hidden;
+    }
+    
+    .navmember {
+        width: 100%;
+    }
+
+    .headnew {
+        font-size: 14px;
+    }
+
+    .share {
+        font-size: 20px;
+        margin-top: 32px;
+    }
+    .share h3{
+    margin-bottom: 48px;
+    }
+
+    .navmember {
+        width: 324px;
+        height: 88px;
+        margin: 0 auto;
+    }
+    .navmember_item{
+       padding:  12px 20px;
+       height: 88px;
+    }
+    .course_title h1{
+     margin: auto;
+     padding-top: 48px;
+     text-align: center;
+    }
+    .chang_member{
+    display: none;
+    } 
+    .chang_member1 {
+        background: #005F5F;
+        border-radius: 5px;
+        width: 162px;
+        height: 41px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+      
+    }
+    
+    .chang_member1 p {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 600;
+        color: #FFF6E9;
+    }
+    .member_info{
+        padding-bottom: 48px;
+        padding: 0 27.5px;
+    }
+    .member_box12{
+        text-align: left;
+       
+    }
+
+    .member_box12 tr{ 
+        display: flex;     
+        flex-direction: column; 
+    }
+    .member_box1 h2{ 
+        padding: 0;
+        /* padding-bottom: 16px; */
+    }
+    /* 姓名跟黃曉明間距 */
+    .member_box1 td:nth-child(1){         
+        padding-bottom: 16px;     
+    }     
+      /* 黃曉明跟性別間距 */
+      .member_box1:not(:last-child) td:nth-child(2){         
+        padding-bottom: 56px;     }
+    .bottom_bd{
+            width: 100%;
+           
+        }
+
+    .member_box12 {
+        padding: 0 15px 0 15px;
+    }
+    .member_box{
+    
+    }
+    .member_box1 h3{
+        display: flex;
+        align-items: center;
+    }
+    .select_month{
+        width: 76px;
+        margin-right: 15px;
+    }
+    .member_box123{
+        letter-spacing: 15px;
+    }
+
+}
